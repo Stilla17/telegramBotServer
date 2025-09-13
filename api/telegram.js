@@ -3,8 +3,8 @@ export default async function handler(req, res) {
         return res.status(405).json({ error: "Only POST requests allowed" });
     }
 
-    const TOKEN = "6848912307:AAG9YQb232eKhrXOQFCUHJPPAg3QPS_t4iE"; // tokenni .env faylda saqlash yaxshi
-    const CHAT_ID = "616200947";
+    const TOKEN = process.env.TELEGRAM_TOKEN;
+    const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
     const { text } = req.body;
 
