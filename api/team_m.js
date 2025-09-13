@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     }
 
     const TOKEN = process.env.TELEGRAM_TOKEN;
-    const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+    const CHAT_ID = process.env.TELEGRAM_CHAT_IDM;
 
     const { text } = req.body;
 
